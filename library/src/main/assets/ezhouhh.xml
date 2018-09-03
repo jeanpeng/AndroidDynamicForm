@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rule>
+    <ruleItem name="人数" btnType="radiobox" hideLine="true">
+        <Item name="4人" default="true">
+            <params key="maxMember" type="int">4</params>
+            <params key="queYiMen" type="int">1</params>
+        </Item>
+        <Item name="3人">
+            <params key="maxMember" type="int">3</params>
+            <params key="queYiMen" type="int">2</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="玩法" btnType="radiobox">
+        <Item name="红中杠" default="true">
+            <params key="wanFa" type="int">1</params>
+        </Item>
+        <Item name="红中发财杠">
+            <params key="wanFa" type="int">2</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="" btnType="checkbox">
+        <condition key="maxMember">3</condition>
+        <Item name="缺一门">
+            <params checked="2" key="queYiMen" type="int" default="true">1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="" btnType="checkbox">
+        <Item name="杠上花加1番">
+            <params checked="2" key="ganghuafan" type="int">1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="底分" btnType="radiobox">
+        <Item name="1分" default="true">
+            <params key="diFen" type="int">1</params>
+        </Item>
+        <Item name="2分">
+            <params key="diFen" type="int">2</params>
+        </Item>
+        <Item name="5分">
+            <params key="diFen" type="int">5</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="封顶" btnType="radiobox">
+        <Item name="12分" default="true">
+            <params key="fengDing" type="int">12</params>
+            <condition key="wanFa">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="30分">
+            <params key="fengDing" type="int">30</params>
+            <condition key="wanFa">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分">
+            <params key="fengDing" type="int">50</params>
+            <condition key="wanFa">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="30分" default="true">
+            <params key="fengDing" type="int">30</params>
+            <condition key="wanFa">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分">
+            <params key="fengDing" type="int">50</params>
+            <condition key="wanFa">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="80分">
+            <params key="fengDing" type="int">80</params>
+            <condition key="wanFa">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分" default="true">
+            <params key="fengDing" type="int">50</params>
+            <condition key="diFen">2</condition>
+        </Item>
+        <Item name="60分">
+            <params key="fengDing" type="int">60</params>
+            <condition key="diFen">2</condition>
+        </Item>
+        <Item name="120分" default="true">
+            <params key="fengDing" type="int">120</params>
+            <condition key="diFen">5</condition>
+        </Item>
+        <Item name="150分">
+            <params key="fengDing" type="int">150</params>
+            <condition key="diFen">5</condition>
+        </Item>
+    </ruleItem>
+    <ruleItem name="飘分" btnType="radiobox">
+        <Item name="不飘" default="true">
+            <params key="piaoFen" type="int">0</params>
+        </Item>
+        <Item name="5分">
+            <params key="piaoFen" type="int">5</params>
+        </Item>
+        <Item name="10分">
+            <params key="piaoFen" type="int">10</params>
+        </Item>
+        <Item name="20分">
+            <params key="piaoFen" type="int">20</params>
+        </Item>
+        <Item name="自由飘">
+            <params key="piaoFen" type="int">-1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="局数" btnType="radiobox">
+        <Item name="8局" coins="300,100,300" default="true">
+            <params key="totalGameNums" type="int">8</params>
+        </Item>
+        <Item name="16局" coins="600,200,600">
+            <params key="totalGameNums" type="int">16</params>
+        </Item>
+        <Item name="24局" coins="900,300,900">
+            <params key="totalGameNums" type="int">24</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="功能" btnType="checkbox">
+        <Item name="禁用互动道具">
+            <params checked="2" key="limitProp">1</params>
+        </Item>
+        <Item name="防作弊">
+            <params checked="2" key="fangZuoBi" type="int">1</params>
+        </Item>
+    </ruleItem>
+</rule>
