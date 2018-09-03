@@ -1,0 +1,2 @@
+# dynamicForm
+基于xml配置的Android动态表单，支持checkbox和radiobox
