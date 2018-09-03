@@ -24,6 +24,6 @@
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
         android:stateListAnimator="@null"
-        android:text="保存方案"
+        android:text="保存资料"
         />
 </RelativeLayout>

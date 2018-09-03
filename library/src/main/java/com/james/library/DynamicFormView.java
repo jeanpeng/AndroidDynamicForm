@@ -79,7 +79,7 @@ public class DynamicFormView extends RelativeLayout{
     private void doLayout() {
         try {
             SAXReader reader = new SAXReader();
-            Document document = reader.read(mContext.getAssets().open("ezhouhh.xml"));
+            Document document = reader.read(mContext.getAssets().open("test.xml"));
             Element root = document.getRootElement();
             Iterator<Element> itor = root.elementIterator();
             while (itor.hasNext()) {

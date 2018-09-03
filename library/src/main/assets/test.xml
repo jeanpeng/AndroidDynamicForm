@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rule>
+    <ruleItem name="性别" btnType="radiobox" hideLine="true">
+        <Item name="男" default="true">
+            <params key="sex" type="int">4</params>
+        </Item>
+        <Item name="女">
+            <params key="sex" type="int">3</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="民族" btnType="radiobox">
+        <Item name="汉族" default="true">
+            <params key="minzu" type="int">1</params>
+        </Item>
+        <Item name="少数民族">
+            <params key="minzu" type="int">2</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="" btnType="checkbox">
+        <condition key="sex">3</condition>
+        <Item name="已婚">
+            <params checked="2" key="yihun" type="int" default="true">1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="" btnType="checkbox">
+        <Item name="全日制">
+            <params checked="2" key="qrz" type="int">1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="加分" btnType="radiobox">
+        <Item name="1分" default="true">
+            <params key="diFen" type="int">1</params>
+        </Item>
+        <Item name="2分">
+            <params key="diFen" type="int">2</params>
+        </Item>
+        <Item name="5分">
+            <params key="diFen" type="int">5</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="封顶" btnType="radiobox">
+        <Item name="12分" default="true">
+            <params key="fengDing" type="int">12</params>
+            <condition key="minzu">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="30分">
+            <params key="fengDing" type="int">30</params>
+            <condition key="minzu">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分">
+            <params key="fengDing" type="int">50</params>
+            <condition key="minzu">1</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="30分" default="true">
+            <params key="fengDing" type="int">30</params>
+            <condition key="minzu">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分">
+            <params key="fengDing" type="int">50</params>
+            <condition key="minzu">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="80分">
+            <params key="fengDing" type="int">80</params>
+            <condition key="minzu">2</condition>
+            <condition key="diFen">1</condition>
+        </Item>
+        <Item name="50分" default="true">
+            <params key="fengDing" type="int">50</params>
+            <condition key="diFen">2</condition>
+        </Item>
+        <Item name="60分">
+            <params key="fengDing" type="int">60</params>
+            <condition key="diFen">2</condition>
+        </Item>
+        <Item name="120分" default="true">
+            <params key="fengDing" type="int">120</params>
+            <condition key="diFen">5</condition>
+        </Item>
+        <Item name="150分">
+            <params key="fengDing" type="int">150</params>
+            <condition key="diFen">5</condition>
+        </Item>
+    </ruleItem>
+    <ruleItem name="学历" btnType="radiobox">
+        <Item name="本科以下" default="true">
+            <params key="xueli" type="int">0</params>
+        </Item>
+        <Item name="本科">
+            <params key="xueli" type="int">5</params>
+        </Item>
+        <Item name="硕士">
+            <params key="xueli" type="int">10</params>
+        </Item>
+        <Item name="博士">
+            <params key="xueli" type="int">20</params>
+        </Item>
+        <Item name="其他">
+            <params key="xueli" type="int">-1</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="学科" btnType="radiobox">
+        <Item name="文史" default="true">
+            <params key="totalGameNums" type="int">8</params>
+        </Item>
+        <Item name="理科">
+            <params key="totalGameNums" type="int">16</params>
+        </Item>
+        <Item name="工科">
+            <params key="totalGameNums" type="int">24</params>
+        </Item>
+    </ruleItem>
+    <ruleItem name="其他" btnType="checkbox">
+        <Item name="党员">
+            <params checked="2" key="dangyuan">1</params>
+        </Item>
+        <Item name="犯罪记录">
+            <params checked="2" key="jilu" type="int">1</params>
+        </Item>
+    </ruleItem>
+</rule>
